@@ -4,9 +4,23 @@
 <title>Candy Crush Custom Level!!</title>
 <style>
 body {
-    background: linear-gradient(45deg, #ffafaf, #ffd3a5, #fdffb6, #c2f0c2, #a0c4ff, #b9b3e2, #d9b7eb);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background: repeating-linear-gradient(
+        to right,
+        #ffafaf,   /* Light Pink */
+        #ffafaf 10%, /* Light Pink */
+        #ffd3a5 10%, /* Light Peach */
+        #ffd3a5 20%, /* Light Peach */
+        #fdffb6 20%, /* Light Yellow */
+        #fdffb6 30%, /* Light Yellow */
+        #c2f0c2 30%, /* Light Green */
+        #c2f0c2 40%, /* Light Green */
+        #a0c4ff 40%, /* Light Blue */
+        #a0c4ff 50%, /* Light Blue */
+        #b9b3e2 50%, /* Light Lavender */
+        #b9b3e2 60%, /* Light Lavender */
+        #d9b7eb 60%, /* Light Purple */
+        #d9b7eb 70%  /* Light Purple */
+    );
     color: white;
     margin: 0;
     padding: 0;
@@ -14,12 +28,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 #flash {
